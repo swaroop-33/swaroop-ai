@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaroop AI | Student Assistant</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-background"></div>
+    <div class="glass-overlay"></div>
+
+    <main class="chat-interface">
+        <header class="chat-header">
+            <div class="logo-area">
+                <i class="fa-solid fa-khanda logo-icon"></i>
+                <div class="logo-text">
+                    <h1>SWAROOP <span class="accent">AI</span></h1>
+                    <span class="status-dot"></span> <span class="status-text">Online</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="icon-btn" title="Clear Chat" id="clear-btn"><i
+                        class="fa-solid fa-trash-can"></i></button>
+                <button class="icon-btn" title="Settings"><i class="fa-solid fa-gear"></i></button>
+            </div>
+        </header>
+
+        <section class="messages-container" id="messages-container">
+            <!-- Welcome Message -->
+            <div class="message system-message">
+                <div class="avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="bubble">
+                    <p>Hello! I am <strong>Swaroop AI</strong>. I am here to help you with coding, studies, and general
+                        knowledge. How can I assist you today?</p>
+                    <span class="timestamp">Now</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="input-area">
+            <form id="chat-form" class="chat-form">
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="Type your command..." autocomplete="off">
+                    <button type="button" class="action-btn"><i class="fa-solid fa-paperclip"></i></button>
+                </div>
+                <button type="submit" class="send-btn">
+                    <span>Send</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
